@@ -18,7 +18,9 @@ export function Counter() {
   };
 
   const linkToSourceCode = () => {
-    window.open("https://www.google.com", "_blank");
+    const sourceCodeLink =
+      "https://github.com/natersland/leceipt_exercise/blob/main/src/features/02_increment_decrement/increment_decrement.tsx";
+    window.open(sourceCodeLink, "_blank");
   };
 
   return (
