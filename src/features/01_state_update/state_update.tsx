@@ -24,7 +24,7 @@ const StateUpdate = () => {
         </>
       }
       header_text="State Update"
-      source_code_url="" // TODO add source code url
+      source_code_url="https://github.com/natersland/lc_react_exercise/blob/main/src/features/01_state_update/state_update.tsx"
       code_snippet={CodeBlockSnippet.state_update}
     ></CardLayout>
   );
