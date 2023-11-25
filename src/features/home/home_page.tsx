@@ -10,7 +10,7 @@ function HomePage({}: Props) {
     <div className="flex flex-col">
       <Title text="Akira Chenyavanij 🚀" underline={true} />
       <NavigationBar />
-      <div className="flex flex-col justify-center p-10">
+      <div className="flex flex-col p-10 items-center">
         <StateUpdate />
         <Counter />
       </div>
