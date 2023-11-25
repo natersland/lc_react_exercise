@@ -1,6 +1,9 @@
+import CardLayout from "@/common/components/card_layout";
+import { CodeBlockSnippet } from "@/common/utils/code_block";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
+import { Code } from "react-code-blocks";
 
 export function Counter() {
   const [count, setCount] = useState({ type: "even", count: 0 });
@@ -17,16 +20,10 @@ export function Counter() {
     setCount({ type: newType, count: newCount });
   };
 
-  const linkToSourceCode = () => {
-    const sourceCodeLink =
-      "https://github.com/natersland/leceipt_exercise/blob/main/src/features/02_increment_decrement/increment_decrement.tsx";
-    window.open(sourceCodeLink, "_blank");
-  };
-
   return (
-    <div className="w-4/5 p-4">
-      <Card className="flex flex-col p-4">
-        <CardContent>
+    <CardLayout
+      children={
+        <>
           <h2>Count: {count.count}</h2>
           <p className="mb-4">Type: {count.type}</p>
           <div className="flex-row">
@@ -37,11 +34,11 @@ export function Counter() {
               Decrement
             </Button>
           </div>
-        </CardContent>
-      </Card>
-      <Button variant="link" className="underline" onClick={linkToSourceCode}>
-        source code
-      </Button>
-    </div>
+        </>
+      }
+      header_text="Increment/Decrement"
+      code_snippet={CodeBlockSnippet.increment_decrement}
+      source_code_url="https://github.com/natersland/lc_react_exercise/blob/main/src/features/02_increment_decrement/increment_decrement.tsx"
+    ></CardLayout>
   );
 }

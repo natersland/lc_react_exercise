@@ -2,13 +2,13 @@ import { TypographyVariants } from "./variants/typography_variants";
 
 export type TypographyProps = {
   intent: "h1" | "h2" | "h3" | "p";
-  color: "primary" | "secondary" | "destructive" | "accent";
-  align: "left" | "center" | "right";
+  color?: "primary" | "secondary" | "destructive" | "accent";
+  align?: "left" | "center" | "right";
   style?: "none" | "underline";
   text: string;
 };
 
-export const typography = ({
+export const Typography = ({
   intent,
   color,
   align,
@@ -51,4 +51,4 @@ export const typography = ({
   return content;
 };
 
-export default typography;
+export default Typography;
