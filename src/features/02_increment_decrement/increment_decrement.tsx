@@ -1,9 +1,7 @@
 import CardLayout from "@/common/components/card_layout";
 import { CodeBlockSnippet } from "@/common/utils/code_block";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
-import { Code } from "react-code-blocks";
 
 export function Counter() {
   const [count, setCount] = useState({ type: "even", count: 0 });

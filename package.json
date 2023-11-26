@@ -12,6 +12,7 @@
   "dependencies": {
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-slot": "^1.0.2",
+    "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.292.0",
@@ -19,7 +20,8 @@
     "react-code-blocks": "^0.1.5",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.4.6"
   },
   "devDependencies": {
     "@types/node": "^20.9.4",
