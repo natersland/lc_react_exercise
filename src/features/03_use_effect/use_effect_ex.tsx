@@ -112,7 +112,7 @@ const UseEffectEx = () => {
       }
       header_text="Sample Axios Request in React with TypeScript"
       code_snippet={CodeBlockSnippet.use_effect}
-      source_code_url=""
+      source_code_url="https://github.com/natersland/lc_react_exercise/blob/main/src/features/03_use_effect/use_effect_ex.tsx"
     ></CardLayout>
   );
 };
